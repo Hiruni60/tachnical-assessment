@@ -33,3 +33,20 @@ Make sure you have these installed:
    ```bash
    git clone https://github.com/Hiruni60/tachnical-assessment.git
    cd tachnical-assessment
+
+## 1. Build and start containers
+docker-compose up -d --build
+
+## 2. Run database migrations
+docker-compose exec app php artisan migrate
+
+## 3. Run the Laravel backend
+docker-compose exec app php artisan serve --host=0.0.0.0
+
+## 4. Run the Vue frontend (in another terminal )
+npm install
+npm run dev
+
+## Running Tests
+docker-compose exec app php artisan test
+
