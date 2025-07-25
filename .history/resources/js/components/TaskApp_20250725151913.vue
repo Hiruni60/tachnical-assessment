@@ -82,7 +82,7 @@ export default {
     },
     addTask() {
       if (!this.title.trim()) return
-      axios.post('/api/tasks', {
+      axios.post('/tasks', {
         title: this.title.trim(),
         description: this.description.trim()
       }).then(() => {
@@ -92,7 +92,7 @@ export default {
       })
     },
     markDone(id) {
-      axios.patch(`/api/tasks/${id}/complete`).then(() => this.fetchTasks())
+      axios.patch(`/tasks/${id}/complete`).then(() => this.fetchTasks())
     }
   },
   mounted() {

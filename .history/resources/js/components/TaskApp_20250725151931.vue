@@ -82,7 +82,7 @@ export default {
     },
     addTask() {
       if (!this.title.trim()) return
-      axios.post('/api/tasks', {
+      axios.post('/tasks', {
         title: this.title.trim(),
         description: this.description.trim()
       }).then(() => {
