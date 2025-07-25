@@ -3,7 +3,7 @@
     <div class="bg-white shadow-lg rounded-xl w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 overflow-hidden">
       <!-- Left: Add Task -->
       <div class="p-8 border-r border-gray-200">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6">+ Add a Task</h2>
+        <h2 class="text-2xl font-bold text-gray-800 mb-6"> Add a Task</h2>
 
         <form @submit.prevent="addTask" class="space-y-4">
           <div>
@@ -39,7 +39,7 @@
         <h2 class="text-2xl font-bold text-gray-800 mb-6">📋 Tasks</h2>
 
         <div v-if="tasks.length === 0" class="text-center text-gray-500 mt-10">
-          <p>No tasks yet.</p>
+          <p>No tasks yet. 🎉</p>
         </div>
 
         <div

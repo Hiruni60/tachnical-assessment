@@ -39,7 +39,7 @@
         <h2 class="text-2xl font-bold text-gray-800 mb-6">📋 Tasks</h2>
 
         <div v-if="tasks.length === 0" class="text-center text-gray-500 mt-10">
-          <p>No tasks yet.</p>
+          <p>No tasks yet. 🎉</p>
         </div>
 
         <div
